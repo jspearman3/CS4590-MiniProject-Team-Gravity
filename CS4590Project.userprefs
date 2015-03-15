@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Scripts\Camera Scripts\SmoothLookAt.js">
+    <Files>
+      <File FileName="Assets\HW4 Includes\Scripts\First-Person Controller\CharacterMotor.cs" Line="404" Column="16" />
+      <File FileName="Assets\HW4 Includes\Scripts\First-Person Controller\FPSInputController.cs" Line="1" Column="1" />
+      <File FileName="Assets\HW4 Includes\Scripts\First-Person Controller\MouseLook.cs" Line="1" Column="1" />
+      <File FileName="Assets\HW4 Includes\Scripts\First-Person Controller\PlatformInputController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Scripts\Camera Scripts\SmoothLookAt.js" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
