@@ -6,6 +6,7 @@ public class SpaceController : MonoBehaviour {
 	private Vector3 velocity;
 	private CharacterController cc;
 	public float breakingFactor;
+	private Transform playerTransform;
 
 
 
@@ -13,6 +14,7 @@ public class SpaceController : MonoBehaviour {
 	void Start () {
 		cc = GetComponent<CharacterController>();
 		velocity = Vector3.zero;
+		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 	}
 	
 	// Update is called once per frame
@@ -39,6 +41,14 @@ public class SpaceController : MonoBehaviour {
 				velocity = velocity * breakingFactor;
 			}
 
+		} else if (Input.GetKey("g") && other.tag == "Airlock Teleport") {
+			velocity = Vector3.zero;
+			playerTransform.position = new Vector3(0.3F, 5.6F, 104.9F);
+			playerTransform.localEulerAngles = new Vector3(276.1F, 38.4F, 349.3F);
+		} else if (Input.GetKey("g") && other.tag == "ISS Teleport") {
+			velocity = Vector3.zero;
+			playerTransform.position = new Vector3(9949.9F, -5.4F, 1.8F);
+			playerTransform.localEulerAngles = new Vector3(4.2F, 178.0F, -1.3F);
 		}
 	}
 	
