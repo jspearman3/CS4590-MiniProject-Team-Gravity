@@ -1,13 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\HW4 Includes\Scripts\First-Person Controller\SpaceController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Scripts\Camera Scripts\SmoothLookAt.js">
     <Files>
-      <File FileName="Assets\HW4 Includes\Scripts\First-Person Controller\SpaceController.cs" Line="43" Column="46" />
-      <File FileName="Assets\HW4 Includes\Scripts\First-Person Controller\CharacterMotor.cs" Line="1" Column="1" />
+      <File FileName="Assets\HW4 Includes\Scripts\First-Person Controller\CharacterMotor.cs" Line="15" Column="28" />
       <File FileName="Assets\HW4 Includes\Scripts\First-Person Controller\FPSInputController.cs" Line="1" Column="1" />
-      <File FileName="Assets\HW4 Includes\Scripts\First-Person Controller\MouseLook.cs" Line="1" Column="1" />
-      <File FileName="Assets\HW4 Includes\Scripts\First-Person Controller\PlatformInputController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Scripts\Camera Scripts\SmoothLookAt.js" Line="1" Column="1" />
+      <File FileName="Assets\HW4 Includes\Scripts\First-Person Controller\MouseLook.cs" Line="39" Column="36" />
+      <File FileName="Assets\HW4 Includes\Scripts\First-Person Controller\PlatformInputController.cs" Line="13" Column="49" />
+      <File FileName="Assets\Standard Assets\Scripts\Camera Scripts\SmoothLookAt.js" Line="5" Column="4" />
+      <File FileName="Assets\HW4 Includes\Scripts\First-Person Controller\SpaceController.cs" Line="59" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

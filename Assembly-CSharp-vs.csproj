@@ -53,6 +53,7 @@
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\PlatformInputController.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\SpaceController.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\Hatch.cs" />
+     <Compile Include="Assets\HW4 Includes\Scripts\MusicPlayer.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Jimmy/Documents/CS4590Project/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>

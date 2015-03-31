@@ -7,6 +7,8 @@ public class SpaceController : MonoBehaviour {
 	private CharacterController cc;
 	public float breakingFactor;
 	private Transform playerTransform;
+	private Vector3 acceleration;
+	public float pushPower = 2.0F;
 
 
 
@@ -15,6 +17,7 @@ public class SpaceController : MonoBehaviour {
 		cc = GetComponent<CharacterController>();
 		velocity = Vector3.zero;
 		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+		acceleration = Vector3.zero;
 	}
 	
 	// Update is called once per frame
@@ -23,7 +26,10 @@ public class SpaceController : MonoBehaviour {
 		Vector3 horizontalAcc = Input.GetAxis ("Horizontal") * transform.TransformDirection (Vector3.right) * MoveSpeed;
 		Vector3 verticalAcc = Input.GetAxis ("VerticalMove") * transform.TransformDirection (Vector3.up) * MoveSpeed;
 
-		Vector3 acceleration = (forwardAcc + horizontalAcc + verticalAcc);
+		acceleration = (forwardAcc + horizontalAcc + verticalAcc);
+
+
+
 
 		velocity += (acceleration * Time.deltaTime);
 
@@ -32,6 +38,22 @@ public class SpaceController : MonoBehaviour {
 		float spinSensitivity = 50f;
 		float spin = Input.GetAxis ("Spin") * spinSensitivity;
 		transform.Rotate (new Vector3 (0, 0, spin) * Time.deltaTime);
+	}
+
+	void OnControllerColliderHit(ControllerColliderHit hit) {
+
+		Rigidbody body = hit.collider.attachedRigidbody;
+		if (body == null || body.isKinematic) {
+			if (Vector3.Dot(velocity, hit.normal) < 0) {
+				velocity -= Vector3.Dot(velocity, hit.normal)*hit.normal;
+			}
+			
+			return;
+		}
+
+		body.velocity = pushPower * velocity;
+
+
 	}
 
 	void OnTriggerStay (Collider other) {

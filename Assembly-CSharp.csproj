@@ -53,6 +53,7 @@
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\PlatformInputController.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\SpaceController.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\Hatch.cs" />
+     <Compile Include="Assets\HW4 Includes\Scripts\MusicPlayer.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
