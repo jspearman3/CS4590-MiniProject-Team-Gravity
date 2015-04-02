@@ -21,7 +21,6 @@ public class ChangeClip : MonoBehaviour {
 	void Update () {
 
 		listener = AudioListenTransform.getListenerTransform ();
-		Debug.Log (audio.isPlaying);
 	
 		distanceToListener = Vector3.Distance(audio.transform.position, listener.position);
 		//distanceToListener = (audio.transform.position - listener.position).magnitude;

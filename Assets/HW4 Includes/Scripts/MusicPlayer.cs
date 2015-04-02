@@ -4,6 +4,7 @@ using System.Collections;
 public class MusicPlayer : MonoBehaviour {
 
 	public AudioClip[] songs;
+	public AudioSource musicPlayer;
 	public int songIndex;
 
 	// Use this for initialization
@@ -14,8 +15,8 @@ public class MusicPlayer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!audio.isPlaying) {
-			audio.clip = songs[songIndex];
-			audio.Play();
+			musicPlayer.clip = songs[songIndex];
+			musicPlayer.Play();
 			incSongIndex();
 		}
 	}

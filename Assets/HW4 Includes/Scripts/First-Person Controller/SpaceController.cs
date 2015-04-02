@@ -30,9 +30,6 @@ public class SpaceController : MonoBehaviour {
 		Vector3 verticalAcc = Input.GetAxis ("VerticalMove") * transform.TransformDirection (Vector3.up) * MoveSpeed;
 		acceleration = (forwardAcc + horizontalAcc + verticalAcc);
 
-
-		Debug.Log ("Velocity: " + velocity.magnitude);
-
 		velocity += (acceleration * Time.deltaTime);
 
 		cc.Move(velocity * Time.deltaTime);

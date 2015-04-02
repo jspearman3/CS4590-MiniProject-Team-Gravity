@@ -25,21 +25,18 @@ public class LinearPatrol : MonoBehaviour {
 
 		} else {
 			moveTo (getNextPatrolPoint());
-			Debug.Log("new destination: " + destinationIndex);
 		}
 
 	}
 
 	private void moveTo(Vector3 destination) {
 		Vector3 targetDir = destination - transform.position;
-		Debug.Log (targetDir.magnitude);
 		if (targetDir.magnitude > 0.1) {
 			isMoving = true;
 			float step = rotationSpeed * Time.deltaTime;
 			transform.rotation = Quaternion.RotateTowards (transform.rotation, Quaternion.LookRotation(targetDir, transform.up), step);
 
 			transform.Translate (speed * targetDir.normalized * Time.deltaTime, Space.World);
-			Debug.Log((speed * targetDir.normalized * Time.deltaTime).magnitude);
 		} else {
 			isMoving = false;
 		}
