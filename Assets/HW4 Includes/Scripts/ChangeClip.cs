@@ -26,7 +26,7 @@ public class ChangeClip : MonoBehaviour {
 		distanceToListener = Vector3.Distance(audio.transform.position, listener.position);
 		//distanceToListener = (audio.transform.position - listener.position).magnitude;
 
-		if (distanceToListener < 5) {
+		if (distanceToListener < 7.5) {
 
 				audio.clip = Close_Clip;
 				//audio.Play ();

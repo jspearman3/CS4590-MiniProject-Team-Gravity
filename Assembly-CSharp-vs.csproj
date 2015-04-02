@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{918F6981-CA47-7D8B-0577-2E268444E4CE}</ProjectGuid>
+	<ProjectGuid>{1278E689-F5CD-C7F0-0F1F-E89924BC1566}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,16 +46,22 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\HW4 Includes\Scripts\AudioListenTransform.cs" />
+     <Compile Include="Assets\HW4 Includes\Scripts\BootUp.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\Camera\CameraPowerSwitch.cs" />
+     <Compile Include="Assets\HW4 Includes\Scripts\ChangeClip.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\CharacterMotor.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\FPSInputController.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\MouseLook.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\PlatformInputController.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\SpaceController.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\Hatch.cs" />
+     <Compile Include="Assets\HW4 Includes\Scripts\LinearPatrol.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\MusicPlayer.cs" />
+     <Compile Include="Assets\HW4 Includes\Scripts\PlayGreeting.cs" />
+     <Compile Include="Assets\HW4 Includes\Scripts\PlayRandomClip.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Jimmy/Documents/CS4590Project/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Jimmy/Documents/GitHub/CS4590-MiniProject-Team-Gravity/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
