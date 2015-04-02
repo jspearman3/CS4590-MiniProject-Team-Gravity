@@ -50,12 +50,14 @@
      <Compile Include="Assets\HW4 Includes\Scripts\BootUp.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\Camera\CameraPowerSwitch.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\ChangeClip.cs" />
+     <Compile Include="Assets\HW4 Includes\Scripts\Collision.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\CharacterMotor.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\FPSInputController.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\MouseLook.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\PlatformInputController.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\SpaceController.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\Hatch.cs" />
+     <Compile Include="Assets\HW4 Includes\Scripts\InitialKick.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\LinearPatrol.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\MusicPlayer.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\PlayGreeting.cs" />

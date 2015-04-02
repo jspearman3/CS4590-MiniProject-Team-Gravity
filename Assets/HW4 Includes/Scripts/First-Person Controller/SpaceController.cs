@@ -9,6 +9,8 @@ public class SpaceController : MonoBehaviour {
 	private Transform playerTransform;
 	private Vector3 acceleration;
 	public float pushPower = 2.0F;
+	public AudioClip fastBump;
+	public AudioClip slowBump;
 
 
 
@@ -16,6 +18,7 @@ public class SpaceController : MonoBehaviour {
 	void Start () {
 		cc = GetComponent<CharacterController>();
 		velocity = Vector3.zero;
+
 		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 		acceleration = Vector3.zero;
 	}
@@ -25,11 +28,10 @@ public class SpaceController : MonoBehaviour {
 		Vector3 forwardAcc = Input.GetAxis ("Vertical") * transform.TransformDirection (Vector3.forward) * MoveSpeed;
 		Vector3 horizontalAcc = Input.GetAxis ("Horizontal") * transform.TransformDirection (Vector3.right) * MoveSpeed;
 		Vector3 verticalAcc = Input.GetAxis ("VerticalMove") * transform.TransformDirection (Vector3.up) * MoveSpeed;
-
 		acceleration = (forwardAcc + horizontalAcc + verticalAcc);
 
 
-
+		Debug.Log ("Velocity: " + velocity.magnitude);
 
 		velocity += (acceleration * Time.deltaTime);
 
@@ -44,10 +46,26 @@ public class SpaceController : MonoBehaviour {
 
 		Rigidbody body = hit.collider.attachedRigidbody;
 		if (body == null || body.isKinematic) {
+
+			if (!audio.isPlaying) {
+				if (velocity.magnitude > 6) {
+					audio.volume = 1;
+				} else {
+				 	audio.volume = velocity.magnitude / 6;
+				}
+
+				if (velocity.magnitude > 3) {
+					audio.clip = fastBump;
+					audio.Play ();
+				} else {
+					audio.clip = slowBump;
+					audio.Play ();
+				}
+			}
+
 			if (Vector3.Dot(velocity, hit.normal) < 0) {
 				velocity -= Vector3.Dot(velocity, hit.normal)*hit.normal;
 			}
-			
 			return;
 		}
 

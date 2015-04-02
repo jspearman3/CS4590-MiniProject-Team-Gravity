@@ -36,7 +36,7 @@ public class PlayRandomClip : MonoBehaviour
 
         AudioClip playNext;
 
-        if( distanceToListener < 10 )
+        if( distanceToListener < 15 )
         {
             int rand = (int)Random.Range( 0F, 6F );
             playNext = random_clips[rand];
