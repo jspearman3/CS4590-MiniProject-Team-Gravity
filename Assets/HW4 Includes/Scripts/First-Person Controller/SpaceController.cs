@@ -79,10 +79,12 @@ public class SpaceController : MonoBehaviour {
 			}
 
 		} else if (Input.GetKey("g") && other.tag == "Airlock Teleport") {
+			GetComponent<ToolManager>().toggleTools();
 			velocity = Vector3.zero;
 			playerTransform.position = new Vector3(0.3F, 5.6F, 104.9F);
 			playerTransform.localEulerAngles = new Vector3(276.1F, 38.4F, 349.3F);
 		} else if (Input.GetKey("g") && other.tag == "ISS Teleport") {
+			GetComponent<ToolManager>().toggleTools();
 			velocity = Vector3.zero;
 			playerTransform.position = new Vector3(9949.9F, -5.4F, 1.8F);
 			playerTransform.localEulerAngles = new Vector3(4.2F, 178.0F, -1.3F);

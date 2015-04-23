@@ -43,7 +43,6 @@ public class VisualInterface : MonoBehaviour {
 
 		float MapXOffset = normYWorldOffset * mapXLength; 
 		float MapYOffset = normXWorldOffset * mapYLength;
-		Debug.Log (new Vector2 (MapXOffset, MapYOffset));
 		return new Vector2 (MapXOffset, MapYOffset);
 	}
 

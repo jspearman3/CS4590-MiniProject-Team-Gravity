@@ -62,6 +62,7 @@
      <Compile Include="Assets\HW4 Includes\Scripts\ObjectCollision.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\PlayGreeting.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\PlayRandomClip.cs" />
+     <Compile Include="Assets\HW4 Includes\Scripts\ToolManager.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\VisualInterface.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
