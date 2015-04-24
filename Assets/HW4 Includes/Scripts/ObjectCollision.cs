@@ -10,7 +10,7 @@ public class ObjectCollision : MonoBehaviour {
 		Rigidbody body = GetComponent<Rigidbody>();
 		Rigidbody wall = collision.collider.attachedRigidbody;
 		if (wall == null || wall.isKinematic) {
-			Debug.Log("Collision detected");
+			//Debug.Log("Collision detected");
 			if (body.velocity.magnitude > 6) {
 				collisionPlayer.volume = 1;
 			} else {

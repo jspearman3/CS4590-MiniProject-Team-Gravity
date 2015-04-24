@@ -19,6 +19,9 @@ public class ToolManager : MonoBehaviour {
 	private float wrenchTimer;
 	private float wrenchVolume;
 
+	private float boltPullerVolume;
+	private bool boltPullerEnabled;
+
 	private float TGATimer;
 	private float TGAVolume;
 
@@ -37,8 +40,11 @@ public class ToolManager : MonoBehaviour {
 		wrenchTimer = 0;
 		wrenchVolume = 0.6F;
 
+		boltPullerVolume = 0.2F;
+		boltPullerEnabled = true;
+
 		TGATimer = 0;
-		TGAVolume = 0.2F;
+		TGAVolume = 0.5F;
 
 		handSource = hand.GetComponent<AudioSource> ();
 	}
@@ -131,7 +137,14 @@ public class ToolManager : MonoBehaviour {
 
 
 		} else if (currentToolIndex == 3) {
+			if (boltPullerEnabled) {
+				handSource.loop = false;
+				handSource.clip = toolSounds[3];
+				handSource.volume = boltPullerVolume;
+				handSource.Play ();
+				boltPullerEnabled = false;
 
+			}
 		} else if (currentToolIndex == 4) {
 			TGATimer += 2 * Time.deltaTime;
 
@@ -166,6 +179,9 @@ public class ToolManager : MonoBehaviour {
 			if (wrenchTimer <= 0) {
 				wrenchTimer = 0;
 			}
+		} else if (currentToolIndex == 3) {
+			boltPullerEnabled = true;
+
 		} else if (currentToolIndex == 4) {
 			TGATimer -= 2 * Time.deltaTime;
 

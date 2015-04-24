@@ -72,9 +72,9 @@ public class SpaceController : MonoBehaviour {
 	}
 
 	void OnTriggerStay (Collider other) {
-		if (Input.GetKey("f")) {
+		if (Input.GetKey("f") && !(other.gameObject == GameObject.Find("StationBorder"))) {
 			Debug.Log ("F is held and the collider hit " + other.name);
-			if (velocity.magnitude > 0) {
+			if (velocity.magnitude > 0.005) {
 				velocity = velocity * breakingFactor;
 			}
 
@@ -83,11 +83,13 @@ public class SpaceController : MonoBehaviour {
 			velocity = Vector3.zero;
 			playerTransform.position = new Vector3(0.3F, 5.6F, 104.9F);
 			playerTransform.localEulerAngles = new Vector3(276.1F, 38.4F, 349.3F);
+			GameObject.Find ("StationBorder").GetComponent<ProximityAlert>().toggle();
 		} else if (Input.GetKey("g") && other.tag == "ISS Teleport") {
 			GetComponent<ToolManager>().toggleTools();
 			velocity = Vector3.zero;
 			playerTransform.position = new Vector3(9949.9F, -5.4F, 1.8F);
 			playerTransform.localEulerAngles = new Vector3(4.2F, 178.0F, -1.3F);
+			GameObject.Find ("StationBorder").GetComponent<ProximityAlert>().toggle();
 		}
 	}
 	

@@ -56,14 +56,26 @@
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\PlatformInputController.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\SpaceController.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\Hatch.cs" />
+     <Compile Include="Assets\HW4 Includes\Scripts\HeadsetRadio.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\InitialKick.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\LinearPatrol.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\MusicPlayer.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\ObjectCollision.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\PlayGreeting.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\PlayRandomClip.cs" />
+     <Compile Include="Assets\HW4 Includes\Scripts\Presets.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\ToolManager.cs" />
      <Compile Include="Assets\HW4 Includes\Scripts\VisualInterface.cs" />
+     <Compile Include="Assets\LeonardKatie_Projectsounds\Bolt Puller.cs" />
+     <Compile Include="Assets\LeonardKatie_Projectsounds\Grab.cs" />
+     <Compile Include="Assets\LeonardKatie_Projectsounds\Thrusters.cs" />
+     <Compile Include="Assets\LeonardKatie_Projectsounds\Tool Escape.cs" />
+     <Compile Include="Assets\SarahInteface\AlertxTimes.cs" />
+     <Compile Include="Assets\SarahInteface\ProximityAlert.cs" />
+     <Compile Include="Assets\Sonifications_Emily\Battery\BatteryScript.cs" />
+     <Compile Include="Assets\Sonifications_Emily\CO2\CO2Script.cs" />
+     <Compile Include="Assets\Sonifications_Emily\Music\MusicScript.cs" />
+     <Compile Include="Assets\Sonifications_Emily\Oxygen\OxygenScript.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Jimmy/Documents/GitHub/CS4590-MiniProject-Team-Gravity/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
