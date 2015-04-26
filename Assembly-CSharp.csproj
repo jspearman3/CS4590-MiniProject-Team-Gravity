@@ -46,43 +46,36 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\HW4 Includes\Scripts\AudioListenTransform.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\BootUp.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\Camera\CameraPowerSwitch.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\ChangeClip.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\CharacterMotor.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\FPSInputController.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\MouseLook.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\PlatformInputController.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\First-Person Controller\SpaceController.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\Hatch.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\HeadsetRadio.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\InitialKick.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\LinearPatrol.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\MusicPlayer.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\ObjectCollision.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\PlayGreeting.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\PlayRandomClip.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\Presets.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\ToolManager.cs" />
-     <Compile Include="Assets\HW4 Includes\Scripts\VisualInterface.cs" />
-     <Compile Include="Assets\LeonardKatie_Projectsounds\Bolt Puller.cs" />
-     <Compile Include="Assets\LeonardKatie_Projectsounds\Grab.cs" />
-     <Compile Include="Assets\LeonardKatie_Projectsounds\Thrusters.cs" />
-     <Compile Include="Assets\LeonardKatie_Projectsounds\Tool Escape.cs" />
-     <Compile Include="Assets\SarahInteface\AlertxTimes.cs" />
-     <Compile Include="Assets\SarahInteface\ProximityAlert.cs" />
-     <Compile Include="Assets\Sonifications_Emily\Battery\BatteryScript.cs" />
-     <Compile Include="Assets\Sonifications_Emily\CO2\CO2Script.cs" />
-     <Compile Include="Assets\Sonifications_Emily\Music\MusicScript.cs" />
-     <Compile Include="Assets\Sonifications_Emily\Oxygen\OxygenScript.cs" />
+     <Compile Include="Assets\Scripts\AlertxTimes.cs" />
+     <Compile Include="Assets\Scripts\AudioListenTransform.cs" />
+     <Compile Include="Assets\Scripts\BootUp.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraPowerSwitch.cs" />
+     <Compile Include="Assets\Scripts\ChangeClip.cs" />
+     <Compile Include="Assets\Scripts\First-Person Controller\CharacterMotor.cs" />
+     <Compile Include="Assets\Scripts\First-Person Controller\FPSInputController.cs" />
+     <Compile Include="Assets\Scripts\First-Person Controller\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\First-Person Controller\PlatformInputController.cs" />
+     <Compile Include="Assets\Scripts\First-Person Controller\SpaceController.cs" />
+     <Compile Include="Assets\Scripts\Hatch.cs" />
+     <Compile Include="Assets\Scripts\HeadsetRadio.cs" />
+     <Compile Include="Assets\Scripts\InitialKick.cs" />
+     <Compile Include="Assets\Scripts\LinearPatrol.cs" />
+     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
+     <Compile Include="Assets\Scripts\ObjectCollision.cs" />
+     <Compile Include="Assets\Scripts\PlayGreeting.cs" />
+     <Compile Include="Assets\Scripts\PlayRandomClip.cs" />
+     <Compile Include="Assets\Scripts\Presets.cs" />
+     <Compile Include="Assets\Scripts\ProximityAlert.cs" />
+     <Compile Include="Assets\Scripts\Thrusters.cs" />
+     <Compile Include="Assets\Scripts\ToolManager.cs" />
+     <Compile Include="Assets\Scripts\VisualInterface.cs" />
+     <Compile Include="Assets\Sounds\Auditory Interface\Battery\BatteryScript.cs" />
+     <Compile Include="Assets\Sounds\Auditory Interface\CO2\CO2Script.cs" />
+     <Compile Include="Assets\Sounds\Auditory Interface\Music\MusicScript.cs" />
+     <Compile Include="Assets\Sounds\Auditory Interface\Oxygen\OxygenScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{32720C95-70A8-E573-5541-40353FF1965F}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
